@@ -52,6 +52,7 @@ img{
 .items{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .item{
@@ -60,23 +61,36 @@ img{
     width: 20%;
 }
 
+.item div{
+    display: flex;
+    align-items: center;
+}
+.item div span{
+    font-size: 32px;
+}
+
 .item-content{
     visibility: hidden;
     transition: 1s;
+    font-size: medium;
+    opacity: 0;
 }
 
 .item-content:hover{
     visibility: visible;
+    opacity: 1;
 }
 
 #item-1:hover + #item-content-1{
     visibility: visible;
-    transition: visibility 1s;
+    transition: 1s;
+    opacity: 1;
 }
 
 #item-2:hover + #item-content-2{
     visibility: visible;
     transition: 1s;
+    opacity: 1;
 }
 
 .about{
